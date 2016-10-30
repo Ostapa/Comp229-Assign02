@@ -15,26 +15,72 @@
             </div>
         </div>
         
-        <div class="container">
+        <div class="form-group">
             <p><asp:Label ID="firstNameLbl" Text="First Name" runat="server" /></p>
-            <p><asp:TextBox ID="firstNameTextBox" runat="server" /></p>
+            <p><asp:TextBox ID="txtFirstName" runat="server" /></p>
+            <asp:RequiredFieldValidator ID="firstNameReq" 
+                runat="server" ControlToValidate="txtFirstName"
+                ErrorMessage="Please enter your first name" 
+                Display="Dynamic"/>
             <p><asp:Label ID="lastNameLbl" Text="Last Name" runat="server" /></p>
-            <p><asp:TextBox ID="lastNameTextBox" runat="server" /></p>
+            <p><asp:TextBox ID="txtLastName" runat="server" /></p>
+            <asp:RequiredFieldValidator ID="lastNameReq"
+                runat="server" ControlToValidate="txtLastName"
+                ErrorMessage="Please enter your last name" 
+                Display="Dynamic"/>
             <p><asp:Label ID="ageLbl" Text="Age" runat="server" /></p>
-            <p><asp:DropDownList ID="ageLst" runat="server">
+            <p><asp:DropDownList ID="ddlAge" runat="server">
             </asp:DropDownList></p>
+            <asp:RequiredFieldValidator ID="ddlAgeReq"
+                runat="server" ControlToValidate="ddlAge"
+                ErrorMessage="Please select your age"
+                Display="Dynamic" />
             <p><asp:Label ID="genderLbl" Text="Gender" runat="server" /></p>
-            <p><asp:RadioButton ID="maleRadioBtn" Text="Male" GroupName="gender" runat="server"  /></p>
-            <p><asp:RadioButton ID="femaleRadioBtn" Text="Female" GroupName="gender" runat="server" /></p>
-            <p><asp:RadioButton ID="otherRadioBtn" Text="Other" GroupName="gender" runat="server" /></p>
+            <p><asp:RadioButtonList ID="rblGender" runat="server">
+                    <asp:ListItem Value="male">Male</asp:ListItem>
+                    <asp:ListItem Value="female">Female</asp:ListItem>
+                    <asp:ListItem Value="other">Other</asp:ListItem>
+               </asp:RadioButtonList>    
+            </p>
+            <p>
+            <asp:RequiredFieldValidator ID="genderReq" 
+                runat="server" ControlToValidate="rblGender"
+                ErrorMessage="Please select your gender" 
+                Display="Dynamic" />
             <p><asp:Label ID="emailLbl" Text="Email" runat="server" /></p>
-            <p><asp:TextBox ID="emailTextBox" TextMode="email" runat="server" /></p>
+            <p><asp:TextBox ID="txtEmail" TextMode="email" runat="server" /></p>
+            <%-- if "\_" is included in regular expression it throws an argument exception --%>
+            <asp:RegularExpressionValidator ID="emailRev"
+                runat="server" ControlToValidate="txtEmail"
+                ValidationExpression="^[a-zA-Z0-9]+([a-zA-z0-9\.\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\}\~\|]+)*@[a-zA-Z0-9]+(\.[a-zA-Z0-9\-]+)*(\.[a-z]{2,6})$" 
+                ErrorMessage="Please enter a valid email" 
+                Display="Dynamic" />
+            <asp:RequiredFieldValidator ID="emailReq"
+                runat="server" ControlToValidate="txtEmail"
+                ErrorMessage="Please enter an email" 
+                Display="Dynamic" />
             <p><asp:Label ID="phoneLbl" Text="Phone" runat="server" /></p>
-            <p><asp:TextBox ID="phoneTextBox" TextMode="phone" runat="server" /></p>
+            <p><asp:TextBox ID="txtPhone" TextMode="phone" runat="server" /></p>
+            <asp:RegularExpressionValidator ID="phoneRev"
+                runat="server" ControlToValidate="txtPhone"
+                ValidationExpression="(\+[1]\s?)?(\(|\-|\.)?[0-9]{3}(\)|\-|\.)[.-]?[0-9]{3}[.-]?[0-9]{4}"
+                ErrorMessage="Please enter a valid phone. For example (647)-123-1234"
+                Display="Dynamic" />
+            <asp:RequiredFieldValidator ID="phoneReq"
+                runat="server" ControlToValidate="txtPhone"
+                ErrorMessage="Please enter your phone" 
+                Display="Dynamic" />
             <p><asp:Label ID="countryLbl" Text="Country" runat="server" /></p>
-            <p><asp:RadioButton ID="canadaRadioBtn" Text="Canada" GroupName="country" runat="server" /></p>
-            <p><asp:RadioButton ID="usaRadioBtn" Text="USA" GroupName="country" runat="server" /></p>
-            <p><asp:Button Text="Next Page > " runat="server"/></p>
+            <p><asp:RadioButtonList ID="rblCountry" runat="server">
+                    <asp:ListItem Value="canada">Canada</asp:ListItem>
+                    <asp:ListItem Value="usa">USA</asp:ListItem>
+               </asp:RadioButtonList>
+            </p>
+            <asp:RequiredFieldValidator ID="countryReq"
+                runat="server" ControlToValidate="rblCountry"
+                ErrorMessage="Please select your country"
+                Display="Dynamic" />
+            <p><asp:Button ID="btnSubmit" Text="Next Page > " onclick="btnSubmit_Click" runat="server" /></p>
         </div>
     </div>
 </asp:Content>

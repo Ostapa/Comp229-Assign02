@@ -215,6 +215,7 @@
     <Content Include="Scripts\_references.js" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="SecondSurvey.aspx" />
     <Content Include="Site.Master" />
     <Content Include="Survey.aspx" />
     <Content Include="ThankYou.aspx" />
@@ -354,6 +355,13 @@
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecondSurvey.aspx.cs">
+      <DependentUpon>SecondSurvey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SecondSurvey.aspx.designer.cs">
+      <DependentUpon>SecondSurvey.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

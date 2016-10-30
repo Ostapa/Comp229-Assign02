@@ -22,13 +22,22 @@ namespace Comp229_Assign02 {
         protected global::System.Web.UI.WebControls.Label firstNameLbl;
         
         /// <summary>
-        /// firstNameTextBox control.
+        /// txtFirstName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox firstNameTextBox;
+        protected global::System.Web.UI.WebControls.TextBox txtFirstName;
+        
+        /// <summary>
+        /// firstNameReq control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator firstNameReq;
         
         /// <summary>
         /// lastNameLbl control.
@@ -40,13 +49,22 @@ namespace Comp229_Assign02 {
         protected global::System.Web.UI.WebControls.Label lastNameLbl;
         
         /// <summary>
-        /// lastNameTextBox control.
+        /// txtLastName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox lastNameTextBox;
+        protected global::System.Web.UI.WebControls.TextBox txtLastName;
+        
+        /// <summary>
+        /// lastNameReq control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator lastNameReq;
         
         /// <summary>
         /// ageLbl control.
@@ -58,13 +76,22 @@ namespace Comp229_Assign02 {
         protected global::System.Web.UI.WebControls.Label ageLbl;
         
         /// <summary>
-        /// ageLst control.
+        /// ddlAge control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ageLst;
+        protected global::System.Web.UI.WebControls.DropDownList ddlAge;
+        
+        /// <summary>
+        /// ddlAgeReq control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ddlAgeReq;
         
         /// <summary>
         /// genderLbl control.
@@ -76,31 +103,22 @@ namespace Comp229_Assign02 {
         protected global::System.Web.UI.WebControls.Label genderLbl;
         
         /// <summary>
-        /// maleRadioBtn control.
+        /// rblGender control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton maleRadioBtn;
+        protected global::System.Web.UI.WebControls.RadioButtonList rblGender;
         
         /// <summary>
-        /// femaleRadioBtn control.
+        /// genderReq control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton femaleRadioBtn;
-        
-        /// <summary>
-        /// otherRadioBtn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton otherRadioBtn;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator genderReq;
         
         /// <summary>
         /// emailLbl control.
@@ -112,13 +130,31 @@ namespace Comp229_Assign02 {
         protected global::System.Web.UI.WebControls.Label emailLbl;
         
         /// <summary>
-        /// emailTextBox control.
+        /// txtEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox emailTextBox;
+        protected global::System.Web.UI.WebControls.TextBox txtEmail;
+        
+        /// <summary>
+        /// emailRev control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator emailRev;
+        
+        /// <summary>
+        /// emailReq control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator emailReq;
         
         /// <summary>
         /// phoneLbl control.
@@ -130,13 +166,31 @@ namespace Comp229_Assign02 {
         protected global::System.Web.UI.WebControls.Label phoneLbl;
         
         /// <summary>
-        /// phoneTextBox control.
+        /// txtPhone control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox phoneTextBox;
+        protected global::System.Web.UI.WebControls.TextBox txtPhone;
+        
+        /// <summary>
+        /// phoneRev control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator phoneRev;
+        
+        /// <summary>
+        /// phoneReq control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator phoneReq;
         
         /// <summary>
         /// countryLbl control.
@@ -148,21 +202,30 @@ namespace Comp229_Assign02 {
         protected global::System.Web.UI.WebControls.Label countryLbl;
         
         /// <summary>
-        /// canadaRadioBtn control.
+        /// rblCountry control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton canadaRadioBtn;
+        protected global::System.Web.UI.WebControls.RadioButtonList rblCountry;
         
         /// <summary>
-        /// usaRadioBtn control.
+        /// countryReq control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton usaRadioBtn;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator countryReq;
+        
+        /// <summary>
+        /// btnSubmit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSubmit;
     }
 }

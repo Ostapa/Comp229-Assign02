@@ -14,9 +14,17 @@ namespace Comp229_Assign02
             // a loop to generate the list of age
             for (int i = 12; i < 95; i++)
             {
-                ageLst.Items.Add(new ListItem(i.ToString(), i.ToString()));
+                ddlAge.Items.Add(new ListItem(i.ToString(), i.ToString()));
             }
 
+        }
+
+        protected void btnSubmit_Click(Object sender, EventArgs e)
+        {
+            if(Page.IsValid)
+            {
+                Response.Redirect("SecondSurvey.aspx?Name="+txtFirstName.Text);
+            }     
         }
     }
 }
