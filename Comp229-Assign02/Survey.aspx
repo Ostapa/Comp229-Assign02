@@ -3,7 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">
         <div>
-            <h1>Survey</h1>
+            <h1>Personal Info</h1>
             <hr />
             <h3>Please fill in the following fields to complete the first part of our survey.</h3>
         </div>
@@ -17,19 +17,20 @@
         
         <div class="form-group">
             <p><asp:Label ID="firstNameLbl" Text="First Name" runat="server" /></p>
-            <p><asp:TextBox ID="txtFirstName" runat="server" /></p>
+            <p><asp:TextBox ID="txtFirstName" placeholder="John" runat="server" /></p>
             <asp:RequiredFieldValidator ID="firstNameReq" 
                 runat="server" ControlToValidate="txtFirstName"
                 ErrorMessage="Please enter your first name" 
                 Display="Dynamic"/>
             <p><asp:Label ID="lastNameLbl" Text="Last Name" runat="server" /></p>
-            <p><asp:TextBox ID="txtLastName" runat="server" /></p>
+            <p><asp:TextBox ID="txtLastName" placeholder="Doe" runat="server" /></p>
             <asp:RequiredFieldValidator ID="lastNameReq"
                 runat="server" ControlToValidate="txtLastName"
                 ErrorMessage="Please enter your last name" 
                 Display="Dynamic"/>
             <p><asp:Label ID="ageLbl" Text="Age" runat="server" /></p>
             <p><asp:DropDownList ID="ddlAge" runat="server">
+                <asp:ListItem></asp:ListItem>
             </asp:DropDownList></p>
             <asp:RequiredFieldValidator ID="ddlAgeReq"
                 runat="server" ControlToValidate="ddlAge"
@@ -48,11 +49,11 @@
                 ErrorMessage="Please select your gender" 
                 Display="Dynamic" />
             <p><asp:Label ID="emailLbl" Text="Email" runat="server" /></p>
-            <p><asp:TextBox ID="txtEmail" TextMode="email" runat="server" /></p>
+            <p><asp:TextBox ID="txtEmail" placeholder="j.doe@mail.com" runat="server" /></p>
             <%-- if "\_" is included in regular expression it throws an argument exception --%>
             <asp:RegularExpressionValidator ID="emailRev"
                 runat="server" ControlToValidate="txtEmail"
-                ValidationExpression="^[a-zA-Z0-9]+([a-zA-z0-9\.\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\}\~\|]+)*@[a-zA-Z0-9]+(\.[a-zA-Z0-9\-]+)*(\.[a-z]{2,6})$" 
+                ValidationExpression="^[a-zA-Z0-9]+([\w\.\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\}\~\|]+)*@[a-zA-Z0-9]+(\.[a-zA-Z0-9\-]+)*(\.[a-z]{2,6})$" 
                 ErrorMessage="Please enter a valid email" 
                 Display="Dynamic" />
             <asp:RequiredFieldValidator ID="emailReq"
@@ -60,7 +61,7 @@
                 ErrorMessage="Please enter an email" 
                 Display="Dynamic" />
             <p><asp:Label ID="phoneLbl" Text="Phone" runat="server" /></p>
-            <p><asp:TextBox ID="txtPhone" TextMode="phone" runat="server" /></p>
+            <p><asp:TextBox ID="txtPhone" placeholder="(647)-647-6477" runat="server" /></p>
             <asp:RegularExpressionValidator ID="phoneRev"
                 runat="server" ControlToValidate="txtPhone"
                 ValidationExpression="(\+[1]\s?)?(\(|\-|\.)?[0-9]{3}(\)|\-|\.)[.-]?[0-9]{3}[.-]?[0-9]{4}"

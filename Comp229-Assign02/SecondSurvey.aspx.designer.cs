@@ -13,21 +13,120 @@ namespace Comp229_Assign02 {
     public partial class SecondSurvey {
         
         /// <summary>
-        /// txtUserName control.
+        /// productsOwnedLbl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label txtUserName;
+        protected global::System.Web.UI.WebControls.Label productsOwnedLbl;
         
         /// <summary>
-        /// txtOtherName control.
+        /// cblProductsOwned control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label txtOtherName;
+        protected global::System.Web.UI.WebControls.CheckBoxList cblProductsOwned;
+        
+        /// <summary>
+        /// productPurposeLbl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label productPurposeLbl;
+        
+        /// <summary>
+        /// rblProductPurpose control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList rblProductPurpose;
+        
+        /// <summary>
+        /// productPurposeReq control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator productPurposeReq;
+        
+        /// <summary>
+        /// deviceUsageLbl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label deviceUsageLbl;
+        
+        /// <summary>
+        /// deviceUsageRange control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox deviceUsageRange;
+        
+        /// <summary>
+        /// satisfiedNeedsLbl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label satisfiedNeedsLbl;
+        
+        /// <summary>
+        /// rblSatisfiedNeeds control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList rblSatisfiedNeeds;
+        
+        /// <summary>
+        /// satisfiedNeedsReq control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator satisfiedNeedsReq;
+        
+        /// <summary>
+        /// featuresLbl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label featuresLbl;
+        
+        /// <summary>
+        /// cblFeatures control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBoxList cblFeatures;
+        
+        /// <summary>
+        /// secondBtnSubmit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button secondBtnSubmit;
     }
 }
