@@ -23,7 +23,14 @@ namespace Comp229_Assign02
         {
             if(Page.IsValid)
             {
-                Response.Redirect("SecondSurvey.aspx?Name="+txtFirstName.Text);
+                Application["fName"] = txtFirstName.Text;
+                Application["lName"] = txtLastName.Text;
+                Application["age"] = ddlAge.Text;
+                Application["gender"] = rblGender.Text;
+                Application["email"] = txtEmail.Text;
+                Application["phone"] = txtPhone.Text;
+                Application["country"] = rblCountry.Text;
+                Response.Redirect("SecondSurvey.aspx");
             }     
         }
     }

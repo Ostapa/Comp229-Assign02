@@ -31,6 +31,15 @@ namespace Comp229_Assign02 {
         protected global::System.Web.UI.WebControls.CheckBoxList cblProductsOwned;
         
         /// <summary>
+        /// cvProductsOwned control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator cvProductsOwned;
+        
+        /// <summary>
         /// productPurposeLbl control.
         /// </summary>
         /// <remarks>
@@ -67,13 +76,22 @@ namespace Comp229_Assign02 {
         protected global::System.Web.UI.WebControls.Label deviceUsageLbl;
         
         /// <summary>
-        /// deviceUsageRange control.
+        /// rblDeviceUsage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox deviceUsageRange;
+        protected global::System.Web.UI.WebControls.RadioButtonList rblDeviceUsage;
+        
+        /// <summary>
+        /// deviceUsageReq control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator deviceUsageReq;
         
         /// <summary>
         /// satisfiedNeedsLbl control.
@@ -119,6 +137,15 @@ namespace Comp229_Assign02 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBoxList cblFeatures;
+        
+        /// <summary>
+        /// cvFeatures control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator cvFeatures;
         
         /// <summary>
         /// secondBtnSubmit control.

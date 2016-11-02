@@ -1,0 +1,44 @@
+﻿
+.form-control-lg {
+    height: 45px;
+    min-width: 400px;
+    padding: .75rem 1.5rem;
+    font-size: large;
+    border-radius: .3rem;
+}
+
+.form-control-label {
+    font-size: large;
+    padding: 0 15px 0 0;
+}
+
+.form-control-ddl {
+    width:75px;
+    font-size: large;   
+}
+
+.form-check-inline * {
+    display: inline-block;
+    font-size: large;
+    font-weight: 300;
+    padding: 0 25px 0 5px; 
+}
+
+.form-check-grid * {
+    display: inline-grid;
+    font-size: large;
+    font-weight: 300;
+    padding: 0 25px 0 5px;
+}
+
+.form-check-input {
+    font-weight:300;
+}
+
+.survey-wrapper {
+    width: 600px;
+    margin: 0 auto;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    padding: 20px;
+}
