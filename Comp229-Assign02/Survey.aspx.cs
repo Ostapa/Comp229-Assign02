@@ -21,8 +21,9 @@ namespace Comp229_Assign02
 
         protected void btnSubmit_Click(Object sender, EventArgs e)
         {
-            if(Page.IsValid)
+            if (Page.IsValid)
             {
+                Application["Survey1"] = "valid";
                 Application["fName"] = txtFirstName.Text;
                 Application["lName"] = txtLastName.Text;
                 Application["age"] = ddlAge.Text;
@@ -31,7 +32,7 @@ namespace Comp229_Assign02
                 Application["phone"] = txtPhone.Text;
                 Application["country"] = rblCountry.Text;
                 Response.Redirect("SecondSurvey.aspx");
-            }     
+            }
         }
     }
 }

@@ -28,11 +28,11 @@ namespace Comp229_Assign02
 
             if (Page.IsValid)
             {
+                Application["survey2"] = "valid";
                 Application["firstQ"] = rblProductPurpose.Text;
                 Application["secondQ"] = rblDeviceUsage.Text;
                 Application["thirdQ"] = rblSatisfiedNeeds.Text;
-                
-                
+
                 // a loop to create an array of non-checked features to use them in the question on the last page
                 for (int i = 0; i < cblFeatures.Items.Count; i++)
                 {
@@ -48,7 +48,6 @@ namespace Comp229_Assign02
                 }
                 Application["numOfFeatures"] = nonSelectedFeatures.Items.Count;
                 Response.Redirect("ThirdSurvey.aspx");
-                
             }
         }
 
