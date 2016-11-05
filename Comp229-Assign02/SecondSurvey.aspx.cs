@@ -40,6 +40,31 @@ namespace Comp229_Assign02
                     {
                         nonSelectedFeatures.Items.Add(cblFeatures.Items[i]);
                     }
+                    else
+                    {
+                        // create a string of udeful features to include them in summary on the last page
+                        if(i == cblFeatures.Items.Count-1)
+                        {
+                            Application["usefulFeatures"] += cblFeatures.Items[i].ToString();
+                        }
+                        else
+                        Application["usefulFeatures"] += cblFeatures.Items[i].ToString() + ", ";
+                    }
+                }
+
+                // a loop to store values of owned devices
+                for (int i = 0; i < cblProductsOwned.Items.Count; i++)
+                {
+                    if(cblProductsOwned.Items[i].Selected)
+                    {
+                        if(i == 0)
+                        {
+                            Application["devicesOwned"] = cblProductsOwned.Items[i];
+                        }
+                        else
+                        Application["devicesOwned"] += ", " + cblProductsOwned.Items[i];  
+                    }
+
                 }
                 // a loop to set a values in AplicationSettings
                 for (int i = 0; i < nonSelectedFeatures.Items.Count; i++)
@@ -51,6 +76,10 @@ namespace Comp229_Assign02
             }
         }
 
-
+        protected void previousButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Survey.aspx");
+            
+        }
     }
 }

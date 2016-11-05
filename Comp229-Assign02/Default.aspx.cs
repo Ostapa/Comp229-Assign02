@@ -13,5 +13,10 @@ namespace Comp229_Assign02
         {
 
         }
+
+        protected void btnToSurvey_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Survey.aspx");
+        }
     }
 }

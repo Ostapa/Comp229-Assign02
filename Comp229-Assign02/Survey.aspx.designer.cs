@@ -40,6 +40,15 @@ namespace Comp229_Assign02 {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator firstNameReq;
         
         /// <summary>
+        /// fNameRev control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator fNameRev;
+        
+        /// <summary>
         /// lastNameLbl control.
         /// </summary>
         /// <remarks>
@@ -65,6 +74,15 @@ namespace Comp229_Assign02 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator lastNameReq;
+        
+        /// <summary>
+        /// lNameRev control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator lNameRev;
         
         /// <summary>
         /// ageLbl control.

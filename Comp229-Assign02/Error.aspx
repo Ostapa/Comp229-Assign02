@@ -3,7 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID ="MainContent" runat="server">
 <div>
     <div class="container">
-        <h1>Sorry, you must complete the <a href="Survey.aspx">survey</a> to access this page</h1>
+        <h1><asp:Label ID="errorLbl" runat="server" /></h1>
     </div>
     
 </div>

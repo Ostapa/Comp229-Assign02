@@ -21,7 +21,7 @@
                 <asp:RequiredFieldValidator ID="firstQReq"
                     runat="server" ControlToValidate="txtFirstQ"
                     ErrorMessage="Please fill in the field above."
-                    Display="Static" ForeColor="Red" />
+                    ForeColor="Red" />
             </div>
         
             <div class="form-group">
@@ -29,13 +29,17 @@
                 <asp:TextBox ID="txtSecondQ" CssClass="form-control form-control-lg" runat="server" />
                 <asp:RequiredFieldValidator ID="secondQReq"
                     runat="server" ControlToValidate="txtSecondQ"
-                    ErrorMessage="Please fill in the field"
-                    Display="Static" />
+                    ErrorMessage="Please provide an answer"
+                    ForeColor="Red" />
             </div>
             <div class="form-check-input">
-                <asp:Label ID="thirdQ" CssClass="form-control-label" runat="server" />
+                <asp:Label ID="ratingLbl" CssClass="form-control-label" runat="server" />
                 <asp:RadioButtonList ID="rblRating" CssClass="form-control-grid" runat="server">
                 </asp:RadioButtonList>
+                <asp:RequiredFieldValidator ID="ratingReq"
+                    runat="server" ControlToValidate="rblRating"
+                    ErrorMessage = "Please rate our devices"
+                    ForeColor="Red" />
             </div>
             <div class="form-group">
                 <asp:Label ID="fourthQ" CssClass="form-control-label" runat="server" />
@@ -43,7 +47,7 @@
                 <asp:RequiredFieldValidator ID="fourthQReq"
                     runat="server" ControlToValidate="txtFourthQ"
                     ErrorMessage="Please provide an answer"
-                    Display="Static" />
+                    ForeColor="Red" />
             </div>
             <div class="form-group">
                 <asp:Label ID="fifthQ" CssClass="form-control-label" runat="server" />
@@ -51,10 +55,10 @@
                 <asp:RequiredFieldValidator ID="fifthQReq"
                     runat="server" ControlToValidate="txtfifthQ"
                     ErrorMessage="This field is required"
-                    Display="Static" />
+                    ForeColor="Red" />
             </div>
-        
+            <asp:Button ID="btnPrevious" CssClass="btn btn-primary" CausesValidation="false" Text=" < Previous Page" OnClick="btnPrevious_Click" runat="server" />
+            <asp:Button ID="btnSubmit" CssClass="btn btn-success" Text="Finish" OnClick="btnSubmit_Click" runat="server" />
         </div>
-        <asp:Button ID="btnSubmit" CssClass="btn btn-primary" Text="Finish" OnClick="btnSubmit_Click" runat="server" />
     </div>
 </asp:Content>

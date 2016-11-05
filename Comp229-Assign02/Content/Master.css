@@ -2,6 +2,26 @@
 #navLogo {
     height:25px;
 }
+.body-content {
+    min-height: 100%;
+    margin-bottom: -135px;
+}
+
+.body-content:after {
+    content: "";
+    display: block;
+}
+
+footer, .body-content:after {
+    height: 135px;
+    background-color: #333333;
+    padding-bottom: -70px;
+    text-align:center;
+    display: flex;
+    justify-content: center; 
+    color: #ffffff;
+}
+
 
 
 
